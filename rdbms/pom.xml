@@ -104,6 +104,7 @@
                 <artifactId>liquibase-maven-plugin</artifactId>
                 <version>4.5.0</version>
                 <configuration>
+                    <changeLogDirectory>src/main/resources</changeLogDirectory>
                     <changeLogFile>db.changelog-master.yaml</changeLogFile>
                     <url>jdbc:postgresql://localhost:5432/db</url>
                     <username>postgres</username>

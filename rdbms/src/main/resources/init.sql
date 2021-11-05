@@ -6,7 +6,8 @@ create table account1
 (
     id bigserial constraint account_pk primary key,
     amount int,
-    version int
+    version int,
+    CHECK (amount >= 0)
 );
 
 
